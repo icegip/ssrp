@@ -1,4 +1,4 @@
-name: Start build ssr+  two platforms by wk
+name: Start build ssr+  aarch64_cortex-a53
 
 on:
  workflow_dispatch:
@@ -13,9 +13,6 @@ jobs:
         include:
           - arch: aarch64_cortex-a53
             target: mvebu-cortexa53
-
-          - arch: x86_64
-            target: x86-64
 
     steps:
       - uses: actions/checkout@v3
